@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIG - Innovative Cosmetic Ingredients Provider</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #1c1c1c;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #0d6efd;
+    }
+
+    .hero {
+      padding: 80px 20px;
+      text-align: center;
+      background: linear-gradient(to right, #f7f8fc, #ffffff);
+    }
+
+    .hero img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #555;
+      max-width: 700px;
+      margin: 0 auto 30px;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #f5f5f5;
+      border-radius: 8px;
+      padding: 20px;
+    }
+
+    .card img {
+      max-width: 100%;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #111;
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .contact {
+      background: #f0f0f0;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .contact h3 {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">SIG</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#partners">Partners</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="https://i.imgur.com/f69fUuE.jpg" alt="Hero Image">
+    <h1>Innovative Cosmetic Ingredients Provider</h1>
+    <p>PT Sigma Inovasi Global (SIG), founded in 2023, is dedicated to providing high-quality cosmetic ingredients with innovation, passion, and craftsmanship.</p>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <img src="https://i.imgur.com/vKXRttn.jpg" alt="About Us" style="width: 100%; height: auto; margin-bottom: 30px;">
+    <p>We are a privately owned company located in East Java. With a deep commitment to innovation and quality, we support cosmetic brands with reliable ingredients and technical guidance to bring visionary products to life.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Innovation</h3>
+        <p>Pushing boundaries in cosmetic ingredients.</p>
+      </div>
+      <div class="card">
+        <h3>Passion</h3>
+        <p>Dedication to excellence in every product.</p>
+      </div>
+      <div class="card">
+        <h3>Craftsmanship</h3>
+        <p>Meticulous quality control for product excellence.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://i.imgur.com/UpAk0XP.jpg" alt="Trading">
+        <h3>Trading</h3>
+        <p>Diverse portfolio of high-quality cosmetic raw materials.</p>
+      </div>
+      <div class="card">
+        <img src="https://i.imgur.com/gEX8KZX.jpg" alt="Supply Chain">
+        <h3>Supply Chain</h3>
+        <p>Partnerships with trusted suppliers ensure consistent material supply.</p>
+      </div>
+      <div class="card">
+        <img src="https://i.imgur.com/CpsO0Gn.jpg" alt="Technical Services">
+        <h3>Technical Services</h3>
+        <p>Expert formulation consultations and customized solutions.</p>
+      </div>
+      <div class="card">
+        <img src="https://i.imgur.com/wLkaZDA.jpg" alt="Ingredient Sourcing">
+        <h3>Ingredient Sourcing</h3>
+        <p>High-quality ingredients from global suppliers.</p>
+      </div>
+      <div class="card">
+        <img src="https://i.imgur.com/VzN5JbX.jpg" alt="Formulation Guidance">
+        <h3>Formulation Guidance</h3>
+        <p>Innovative product development support.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="partners" class="section">
+    <h2>Our Strategic Partners</h2>
+    <div class="grid">
+      <div class="card">Shandong Hongdae</div>
+      <div class="card">Hondu Group</div>
+      <div class="card">Ruisil Silicone</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Our Diverse Customer Base</h2>
+    <div class="grid">
+      <div class="card">Manufacturing Partners - OEMs</div>
+      <div class="card">Healthcare Professionals - Dermatologists</div>
+      <div class="card">Product Creators - Brand Owners</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Meet Our Experienced Team</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>7 Sales Team</h3>
+        <p>Includes specialists with 9+ years in Jakarta and 11+ years in East Java & Bali</p>
+      </div>
+      <div class="card">
+        <h3>2 R&D Staff</h3>
+        <p>Developing innovative formulations</p>
+      </div>
+      <div class="card">
+        <h3>1 Marketing</h3>
+        <p>With over 8 years of industry experience</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>We appreciate your collaboration and look forward to achieving success together.</p>
+    <p><strong>PT Sigma Inovasi Global</strong><br>
+    Pergudangan SIRIE blok O-25 Jalan Lingkar Timur No.KM. 5.5, Rangkah Kidul, Kec. Sidoarjo, Kabupaten Sidoarjo, Jawa Timur 61234</p>
+    <p>WhatsApp: (+62) XXX-XXXX-XXXX<br>Email: SIG@gmail.com</p>
+  </section>
+
+  <footer>
+    2025 &copy; PT Sigma Inovasi Global - All rights reserved
+  </footer>
+</body>
+</html>
