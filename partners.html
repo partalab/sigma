@@ -4,19 +4,64 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Partners - SIG</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Inter', sans-serif; margin: 0; background: #fff; color: #1c1c1c; }
-    header, footer { background: #111; color: white; padding: 20px; text-align: center; }
-    nav a { margin: 0 15px; color: white; text-decoration: none; font-weight: 500; }
-    nav a:hover { color: #0d6efd; }
-    .logo a { color: white; text-decoration: none; font-weight: 700; font-size: 1.5rem; }
-    .section { padding: 60px 20px; max-width: 900px; margin: auto; }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+    body { background-color: #ffffff; color: #1c1c1c; line-height: 1.6; }
+    header {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 20px 40px; background-color: transparent;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      position: sticky; top: 0; z-index: 1000;
+    }
+    .logo img { height: 40px; }
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #0d6efd;
+    }
+    .hero {
+      height: 100vh;
+      width: 100%;
+      background: url('https://i.imgur.com/45V7odr.png') center center / cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      padding: 0 20px;
+    }
+    .hero-overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 40px;
+      border-radius: 10px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      color: #f1f1f1;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    }
+    footer {
+      background: #111; color: #fff;
+      padding: 30px 20px; text-align: center;
+    }
   </style>
 </head>
 <body>
   <header>
-    <div class="logo"><a href="index.html">SIG</a></div>
+    <div class="logo"><a href="index.html"><img src="https://i.imgur.com/jcro8vj.png" alt="SIG Home Logo" height="40"></a></div>
     <nav>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
@@ -24,7 +69,7 @@
       <a href="contact.html">Contact</a>
     </nav>
   </header>
-
+  
   <div class="section">
     <h1>Strategic Partners</h1>
     <ul>
