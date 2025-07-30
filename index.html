@@ -119,6 +119,20 @@
     .contact h3 {
       margin-bottom: 10px;
     }
+      .hero-overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 40px;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -133,8 +147,10 @@
   </header>
 
   <section class="hero">
-    <h1>Innovative Cosmetic Ingredients Provider</h1>
-    <p>PT Sigma Inovasi Global (SIG), founded in 2023, is dedicated to providing high-quality cosmetic ingredients with innovation, passion, and craftsmanship.</p>
+    <div class="hero-overlay">
+      <h1>Innovative Cosmetic Ingredients Provider</h1>
+      <p>PT Sigma Inovasi Global (SIG), founded in 2023, is dedicated to providing high-quality cosmetic ingredients with innovation, passion, and craftsmanship.</p>
+    </div>
   </section>
 
   <!-- The rest of the site remains unchanged -->
