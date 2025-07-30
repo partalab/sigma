@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SIG - Contact</title>
+  <title>SIG - Home</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     * {
@@ -18,105 +18,147 @@
       line-height: 1.6;
     }
     header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  background-color: transparent;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-}
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: transparent;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+    }
     .logo img {
       height: 40px;
     }
     nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #fff;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-    nav a:hover {
-  color: #2ecc71;
-}
-    .hero {
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #fff;
-  padding: 0 20px;
-  position: relative;
-}
-    .hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  text-align: left;
-  padding: 60px 80px;
-}
-    .contact-form {
-      max-width: 600px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    .contact-form label {
-      display: block;
-      margin-bottom: 5px;
-      font-weight: 600;
-    }
-    .contact-form input,
-    .contact-form textarea {
-      width: 100%;
-      padding: 12px;
-      margin-bottom: 20px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 1rem;
-    }
-    .contact-form button {
-      background-color: #0d2451;
+      margin-left: 20px;
+      text-decoration: none;
       color: #fff;
-      padding: 12px 24px;
-      border: none;
-      border-radius: 5px;
-      font-size: 1rem;
-      cursor: pointer;
+      font-weight: 500;
+      transition: color 0.3s ease;
     }
-    .contact-form button:hover {
-      background-color: #0b1e42;
+    nav a:hover {
+      color: #2ecc71;
+    }
+    .hero {
+      min-height: 100vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      padding: 0 20px;
+      position: relative;
+    }
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      text-align: left;
+      padding: 60px 80px;
+    }
+    .hero-overlay h1 {
+      font-size: 3.5rem;
+    }
+    .hero-overlay p {
+      font-size: 0.95rem;
+      max-width: 50%;
+      color: #f1f1f1;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    }
+    .bg-video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+    .vision {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      padding: 60px 40px;
+      background: #fff;
+    }
+    .vision h2 {
+      width: 100%;
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #1c1c1c;
+      text-align: center;
+    }
+    .vision-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      width: 100%;
+    }
+    .vision-card {
+      flex: 1;
+      min-width: 280px;
+      max-width: 320px;
+      color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      position: relative;
+      height: 300px;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .vision-card.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .vision-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      filter: brightness(50%);
+    }
+    .vision-card .text {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 30px;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .vision-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    .vision-card p {
+      font-size: 1rem;
     }
     footer {
-  background: #0d2451;
-  color: #fff;
-  padding: 15px 40px;
-  text-align: left;
-  font-size: 0.85rem;
-  clear: both;
-  margin-top: 0;
-}
-  .bg-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-</style>
+      background: #0d2451;
+      color: #fff;
+      padding: 15px 40px;
+      text-align: left;
+      font-size: 0.85rem;
+      clear: both;
+      margin-top: 0;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -130,35 +172,36 @@
   </header>
 
   <section class="hero">
-  <video autoplay muted loop playsinline class="bg-video">
-    <source src="https://www.dl.dropboxusercontent.com/scl/fi/qkn2sijdbyay2y2xdqk4m/vecteezy_blue-dunes-slowly-move-in-space-changing-shape_55278418.mp4?rlkey=huh3ncfxvxbjaqiu9vvbxxjfw&raw=1" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
-  <div class="hero-overlay">
-    <h1>Innovative Cosmetic<br>Ingredients Provider</h1>
-    <p style="font-size: 1rem; max-width: 50%; color: #f1f1f1; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);"><br>Sigma Inovasi Global is a cosmetic raw material trader providing high-quality ingredients for skincare, haircare, body care, and color cosmetics. We connect global innovation with local formulators, offering trusted materials, technical support, and reliable service to help bring beauty products to life.</p>
-    <a href="contact.html" style="display: inline-block; margin-top: 20px; background-color: #2ecc71; color: #fff; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: 600;">Contact Us</a>
-  </div>
-    
+    <video autoplay muted loop playsinline class="bg-video">
+      <source src="https://www.dl.dropboxusercontent.com/scl/fi/qkn2sijdbyay2y2xdqk4m/vecteezy_blue-dunes-slowly-move-in-space-changing-shape_55278418.mp4?rlkey=huh3ncfxvxbjaqiu9vvbxxjfw&raw=1" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-overlay">
+      <h1>Innovative Cosmetic<br>Ingredients Provider</h1>
+      <p>Sigma Inovasi Global is a cosmetic raw material trader providing high-quality ingredients for skincare, haircare, body care, and color cosmetics. We connect global innovation with local formulators, offering trusted materials, technical support, and reliable service to help bring beauty products to life.</p>
+      <a href="contact.html" style="display: inline-block; margin-top: 20px; background-color: #2ecc71; color: #fff; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: 600;">Contact Us</a>
+    </div>
+  </section>
+
   <section class="vision">
     <h2>Our Vision</h2>
     <div class="vision-cards">
       <div class="vision-card">
-        <img src="assets/images/vision-innovation.png" alt="Innovation">
+        <img src="assets/images/vision-innovation.png" alt="Innovation"></img>
         <div class="text">
           <h3>Innovation</h3>
           <p>Pushing boundaries in cosmetic ingredients.</p>
         </div>
       </div>
       <div class="vision-card">
-        <img src="assets/images/vision-passion.png" alt="Passion">
+        <img src="assets/images/vision-passion.png" alt="Passion"></img>
         <div class="text">
           <h3>Passion</h3>
           <p>Dedication to excellence in every product.</p>
         </div>
       </div>
       <div class="vision-card">
-        <img src="assets/images/craftmanship.png" alt="Craftsmanship">
+        <img src="assets/images/vision-craftmanship.png" alt="Craftsmanship"></img>
         <div class="text">
           <h3>Craftsmanship</h3>
           <p>Meticulous quality control for unparalleled product excellence.</p>
@@ -166,9 +209,23 @@
       </div>
     </div>
   </section>
-    
+
   <footer>
     &copy; 2025 SIG Company. All rights reserved.
   </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('.vision-card').forEach(card => {
+      observer.observe(card);
+    });
+  </script>
 </body>
 </html>
