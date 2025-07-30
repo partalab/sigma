@@ -61,6 +61,58 @@
       line-height: 1.8;
       margin-top: 20px;
     }
+    .team {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+    .team h2 {
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+    .team-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+    .team-member {
+      width: 250px;
+    }
+    .team-member .image-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 100%;
+      overflow: hidden;
+    }
+    .team-member .image-container img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .team-member .bg-square {
+      position: absolute;
+      top: 20px;
+      left: -20px;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    .team-member h3 {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #0d2451;
+    }
+    .team-member p {
+      margin-top: 10px;
+      font-size: 0.95rem;
+      color: #444;
+    }
     footer {
       background: #0d2451;
       color: #fff;
@@ -86,10 +138,37 @@
   </header>
 
   <div class="section">
-    <p><span style="color: #2ecc71; font-weight: 600;">Smart Solution, Innovating Tomorrow</span>Founded in 2023, we are a privately owned company based in East Java, Indonesia, committed to delivering high-quality cosmetic ingredients to formulators and brands across the region. With a strong focus on innovation, passion, and craftsmanship, we strive to empower the beauty and personal care industry through
-reliable sourcing, technical expertise, and forwardthinking solutions that meet evolving consumer
-demands.<br> Our goal is to become a trusted partner in your product development journey, offering not only ingredients but also insights and inspiration to help bring your formulations to life.
-</p>
+    <p><span style="color: #2ecc71; font-weight: 600;">Smart Solution, Innovating Tomorrow</span><br>Founded in 2023, we are a privately owned company based in East Java, Indonesia, committed to delivering high-quality cosmetic ingredients to formulators and brands across the region. With a strong focus on innovation, passion, and craftsmanship, we strive to empower the beauty and personal care industry through reliable sourcing, technical expertise, and forward-thinking solutions that meet evolving consumer demands.<br>Our goal is to become a trusted partner in your product development journey, offering not only ingredients but also insights and inspiration to help bring your formulations to life.</p>
+  </div>
+
+  <div class="team">
+    <h2>Meet Our Team</h2>
+    <div class="team-grid">
+      <div class="team-member">
+        <div class="image-container">
+          <div class="bg-square" style="background: #0d2451;"></div>
+          <img src="assets/images/team-sales.png" alt="Sales Team">
+        </div>
+        <h3>SALES TEAM</h3>
+        <p>Includes specialists with 9+ years in Jakarta and 13+ years in Central Java, East Java & Bali</p>
+      </div>
+      <div class="team-member">
+        <div class="image-container">
+          <div class="bg-square" style="background: #5fc9a4;"></div>
+          <img src="assets/images/team-rnd.png" alt="RND Team">
+        </div>
+        <h3>RND TEAM</h3>
+        <p>Experts with 10+ years in their field, focused on creating effective and innovative formulations.</p>
+      </div>
+      <div class="team-member">
+        <div class="image-container">
+          <div class="bg-square" style="background: #0d2451;"></div>
+          <img src="assets/images/team-marketing.png" alt="Marketing Team">
+        </div>
+        <h3>MARKETING TEAM</h3>
+        <p>With 10+ years of industry experience, driving brand growth through strategy, trends, and innovation.</p>
+      </div>
+    </div>
   </div>
 
   <footer>
