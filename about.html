@@ -3,78 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SIG - About</title>
+  <title>About - SIG</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
-    body { background-color: #ffffff; color: #1c1c1c; line-height: 1.6; }
-    header {
-      display: flex; justify-content: space-between; align-items: center;
-      padding: 20px 40px; background-color: transparent;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-      position: sticky; top: 0; z-index: 1000;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-    .logo img { height: 40px; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fff;
+      color: #1c1c1c;
+    }
+    header {
+      position: relative;
+      background: url('assets/images/about-header.png') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      align-items: flex-end;
+      padding: 40px;
+      color: white;
+    }
+    nav {
+      position: absolute;
+      top: 0;
+      right: 40px;
+      padding: 20px;
     }
     nav a {
+      color: white;
       margin-left: 20px;
       text-decoration: none;
-      color: #333;
       font-weight: 500;
     }
     nav a:hover {
-      color: #0d6efd;
+      text-decoration: underline;
     }
-    .hero {
-      height: 100vh;
-      width: 100%;
-      background: url('https://i.imgur.com/45V7odr.png') center center / cover no-repeat;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: #fff;
-      padding: 0 20px;
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 40px;
     }
-    .hero-overlay {
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 40px;
-      border-radius: 10px;
+    .logo img {
+      height: 40px;
     }
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    .section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
     }
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 700px;
-      color: #f1f1f1;
-      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    h1 {
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-top: 20px;
     }
     footer {
-      background: #111; color: #fff;
-      padding: 30px 20px; text-align: center;
+      background: #0d2451;
+      color: #fff;
+      padding: 15px 40px;
+      text-align: left;
+      font-size: 0.85rem;
+      margin-top: 60px;
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="logo"><a href="index.html"><img src="https://i.imgur.com/jcro8vj.png" alt="SIG Home Logo" height="40"></a></div>
+    <div class="logo">
+      <a href="index.html"><img src="assets/images/logo-sig.png" alt="SIG Logo"></a>
+    </div>
     <nav>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
       <a href="partners.html">Partners</a>
       <a href="contact.html">Contact</a>
     </nav>
+    <h1>About Us</h1>
   </header>
 
-  <div class="content">
-    <h1>About Us</h1>
-    <p>PT Sigma Inovasi Global (SIG), founded in 2023, is a privately owned company in East Java, Indonesia. We provide high-quality cosmetic ingredients with innovation, passion, and craftsmanship.</p>
+  <div class="section">
+    <p><span style="color: #2ecc71; font-weight: 600;">PT Sigma Inovasi Global (SIG)</span> founded in 2023, we're a privately owned company located in East Java dedicated to providing high-quality cosmetic ingredients with innovation, passion, and craftsmanship.</p>
   </div>
 
-  <footer>&copy; 2025 SIG Company. All rights reserved.</footer>
+  <footer>
+    &copy; 2025 SIG Company. All rights reserved.
+  </footer>
 </body>
 </html>
