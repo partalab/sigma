@@ -1,67 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Partners - SIG</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
-    body { background-color: #ffffff; color: #1c1c1c; line-height: 1.6; }
-    header {
-      display: flex; justify-content: space-between; align-items: center;
-      padding: 20px 40px; background-color: transparent;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-      position: sticky; top: 0; z-index: 1000;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
     }
-    .logo img { height: 40px; }
+    body {
+      background-color: #ffffff;
+      color: #1c1c1c;
+      line-height: 1.6;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: transparent;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+    .logo img {
+      height: 40px;
     }
     nav a {
       margin-left: 20px;
       text-decoration: none;
-      color: #333;
+      color: #fff;
       font-weight: 500;
+      transition: color 0.3s ease;
     }
     nav a:hover {
-      color: #0d6efd;
+      color: #2ecc71;
     }
     .hero {
       height: 100vh;
       width: 100%;
-      background: url('https://i.imgur.com/45V7odr.png') center center / cover no-repeat;
+      background: url('assets/images/service-technical.png') center center / cover no-repeat;
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: #fff;
-      padding: 0 20px;
-    }
-    .hero-overlay {
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 40px;
-      border-radius: 10px;
+      align-items: flex-end;
+      justify-content: flex-start;
+      position: relative;
+      padding: 60px 40px;
     }
     .hero h1 {
       font-size: 3rem;
-      margin-bottom: 20px;
-      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      color: white;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
     }
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 700px;
-      color: #f1f1f1;
-      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    .section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .partners-table {
+      width: 100%;
+      margin-top: 40px;
+    }
+    .row {
+      display: flex;
+      margin-bottom: 20px;
+    }
+    .col {
+      flex: 1;
+      padding: 10px;
+    }
+    .col h3 {
+      background-color: #0d2451;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .col-green h3 {
+      background-color: #76c3a8;
+    }
+    .logos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .logos img {
+      max-height: 40px;
+      max-width: 100px;
     }
     footer {
-      background: #111; color: #fff;
-      padding: 30px 20px; text-align: center;
+      background: #0d2451;
+      color: #fff;
+      padding: 10px 40px;
+      text-align: left;
+      font-size: 0.8rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="logo"><a href="index.html"><img src="https://i.imgur.com/jcro8vj.png" alt="SIG Home Logo" height="40"></a></div>
+    <div class="logo"><a href="index.html"><img src="assets/images/logo-sig-gelap.png" alt="SIG Home Logo"></a></div>
     <nav>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
@@ -69,18 +113,55 @@
       <a href="contact.html">Contact</a>
     </nav>
   </header>
-  
+
+  <section class="hero">
+    <h1>Our Strategic Partners</h1>
+  </section>
+
   <div class="section">
-    <h1>Strategic Partners</h1>
-    <ul>
-      <li>Shandong Hongdae</li>
-      <li>Hondu Group</li>
-      <li>Ruisil Silicone</li>
-      <li>OEM Manufacturers</li>
-      <li>Dermatologists and Formulators</li>
-    </ul>
+    <div class="row">
+      <div class="col">
+        <h3>Active Ingredients</h3>
+        <div class="logos">
+          <img src="assets/images/logo-coseed.png" alt="COSEED BIOPHARM">
+          <img src="assets/images/logo-hongdae.png" alt="Shandong Hongdae">
+          <img src="assets/images/logo-brightgene.png" alt="BrightGene">
+          <img src="assets/images/logo-hondu.png" alt="Hondu Group">
+          <img src="assets/images/logo-zley.png" alt="ZLEY">
+          <img src="assets/images/logo-native.png" alt="Native Extracts">
+          <img src="assets/images/logo-actibiso.png" alt="Actibiso">
+        </div>
+      </div>
+      <div class="col col-green">
+        <h3>Base Ingredients</h3>
+        <div class="logos">
+          <img src="assets/images/logo-siwell.png" alt="Siwell Rebon">
+          <img src="assets/images/logo-ruisil.png" alt="Ruisil Silicone">
+          <img src="assets/images/logo-djc.png" alt="DJC">
+          <img src="assets/images/logo-dct.png" alt="DCT Korea">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h3>Colorant & Beads</h3>
+        <div class="logos">
+          <img src="assets/images/logo-kremer.svg" alt="KREMER">
+          <img src="assets/images/logo-gold.png" alt="Gold Gourmet">
+          <img src="assets/images/logo-waaln.png" alt="WAALN">
+        </div>
+      </div>
+      <div class="col col-green">
+        <h3>Fragrance</h3>
+        <div class="logos">
+          <img src="assets/images/logo-sentium.png" alt="SENTUH">
+        </div>
+      </div>
+    </div>
   </div>
 
-  <footer>&copy; 2025 SIG Company. All rights reserved.</footer>
+  <footer>
+    &copy; 2025 SIG Company. All rights reserved.
+  </footer>
 </body>
 </html>
