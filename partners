@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Partners - SIG</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #1c1c1c;
+    }
+    header, footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1 {
+      text-align: center;
+    }
+    ul {
+      margin-top: 20px;
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Strategic Partners</h1>
+  </header>
+
+  <div class="section">
+    <ul>
+      <li>Shandong Hongdae</li>
+      <li>Hondu Group</li>
+      <li>Ruisil Silicone</li>
+      <li>Local OEM Manufacturers</li>
+      <li>Dermatologists and Health Professionals</li>
+      <li>Independent Product Creators</li>
+    </ul>
+  </div>
+
+  <footer>
+    &copy; 2025 SIG Company. All rights reserved.
+  </footer>
+</body>
+</html>
