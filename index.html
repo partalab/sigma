@@ -101,12 +101,14 @@
       display: flex;
       justify-content: center;
       gap: 0;
+      flex-wrap: nowrap;
     }
     .vision-card {
       flex: 1;
       position: relative;
       overflow: hidden;
-      height: 400px;
+      height: 300px;
+      max-width: 300px;
       text-align: left;
       opacity: 0;
       transform: translateY(40px);
@@ -124,23 +126,35 @@
       height: 100%;
       object-fit: cover;
       z-index: 1;
+      transition: transform 0.3s ease;
     }
     .vision-card .text {
       position: absolute;
-      bottom: 0;
+      top: 0;
       left: 0;
       width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       padding: 20px;
-      background: rgba(13, 36, 81, 0.5);
+      background: rgba(13, 36, 81, 0.4);
       color: white;
       z-index: 2;
+      transition: background 0.3s ease;
     }
     .vision-card h3 {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       margin-bottom: 10px;
     }
     .vision-card p {
-      font-size: 1rem;
+      font-size: 0.9rem;
+    }
+    .vision-card:hover img {
+      transform: scale(1.05);
+    }
+    .vision-card:hover .text {
+      background: rgba(13, 36, 81, 0.6);
     }
     footer {
       background: #0d2451;
