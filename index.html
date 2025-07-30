@@ -69,6 +69,7 @@
     }
     .hero-overlay h1 {
       font-size: 3.5rem;
+      line-height: 1.2;
     }
     .hero-overlay p {
       font-size: 0.95rem;
@@ -86,15 +87,17 @@
       z-index: -1;
     }
     .vision {
-      padding: 60px 40px;
-      background: #fff;
+      position: relative;
+      padding: 100px 40px 60px;
+      background: url('assets/images/vision-background.jpg') center center / cover no-repeat;
+      color: #fff;
     }
     .vision h2 {
-      width: 100%;
-      font-size: 2rem;
-      margin-bottom: 30px;
-      color: #1c1c1c;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
       text-align: center;
+      color: #fff;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
     }
     .vision-cards {
       display: flex;
@@ -124,8 +127,12 @@
     }
     .vision-card .text {
       padding: 20px;
-      background: #0d2451;
+      background: rgba(13, 36, 81, 0.9);
       color: white;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
     }
     .vision-card h3 {
       font-size: 1.5rem;
