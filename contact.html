@@ -43,42 +43,51 @@
       color: #2ecc71;
     }
     .hero {
-      height: 100vh;
+      min-height: 100vh;
       width: 100%;
-      background: url('assets/images/contact-sig.jpeg') center center / cover no-repeat;
+      background: <img src="assets/images/contact-sig.jpeg"> center center / cover no-repeat;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-      text-align: center;
-      color: #fff;
-      padding: 0 20px;
+      padding: 100px 40px 40px;
+      position: relative;
     }
     .hero-overlay {
       background-color: rgba(0, 0, 0, 0.5);
       padding: 40px;
       border-radius: 10px;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      max-width: 1000px;
+      width: 100%;
+      gap: 40px;
     }
-    .hero h1 {
-      font-size: 3rem;
+    .hero-left {
+      flex: 1;
+      color: #fff;
+    }
+    .hero-left h1 {
+      font-size: 2.5rem;
       margin-bottom: 20px;
       text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     }
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 700px;
+    .hero-left p {
+      font-size: 1rem;
+      margin-bottom: 10px;
       color: #f1f1f1;
       text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
     }
     .contact-form {
+      flex: 1;
       max-width: 400px;
-      margin: 40px auto;
-      padding: 0 20px;
     }
     .contact-form label {
       display: block;
       margin-bottom: 5px;
       font-weight: 600;
+      color: #fff;
     }
     .contact-form input,
     .contact-form textarea {
@@ -108,10 +117,18 @@
       text-align: center;
     }
     @media (max-width: 768px) {
-      .hero h1 {
+      .hero-overlay {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .hero-left, .contact-form {
+        max-width: 100%;
+      }
+      .hero-left h1 {
         font-size: 2rem;
       }
-      .hero p {
+      .hero-left p {
         font-size: 1rem;
       }
     }
@@ -119,7 +136,7 @@
 </head>
 <body>
   <header>
-    <div class="logo"><a href="index.html"><img src="assets/images/logo-sig.png" alt="SIG Home Logo"></a></div>
+    <div class="logo"><a href="index.html"><img src="assets/images/logo-sig.png" alt="SIG Home Logo"></img></a></div>
     <nav>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
@@ -130,18 +147,30 @@
 
   <section class="hero">
     <div class="hero-overlay">
-      <h1>Contact Us</h1>
-      <p>Reach out to us for inquiries, support, or collaboration opportunities.</p>
+      <div class="hero-left">
+        <h1>Contact Us</h1>
+        <p><strong>PT SIGMA INOVASI GLOBAL</strong></p>
+        <p>Pergudangan SIRIE blok O-25</p>
+        <p>Jalan Lingkar Timur KM 5.5, Sidoarjo, East Java 61234</p>
+        <p>WhatsApp: (+62) XXX-XXXX-XXXX</p>
+        <p>Email: <a href="mailto:sales@sigmainovasiglobal.com" style="color: #2ecc71;">sales@sigmainovasiglobal.com</a></p>
+      </div>
+      <div class="contact-form">
+        <form action="mailto:sales@sigmainovasiglobal.com" method="post" enctype="text/plain">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="Name" required>
+
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="Subject" required>
+
+          <label for="inquiry">Inquiry</label>
+          <textarea id="inquiry" name="Inquiry" rows="6" required></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
     </div>
   </section>
-
-  <p style="text-align:center; font-size: 0.8rem; color: #555; max-width: 600px; margin: 0 auto 60px;">
-    <strong>PT SIGMA INOVASI GLOBAL</strong><br><br>
-    Pergudangan SIRIE blok O-25<br>
-    Jalan Lingkar Timur KM 5.5, Sidoarjo, East Java 61234<br>
-    WhatsApp: (+62) XXX-XXXX-XXXX<br>
-    Email: <a href="mailto:sales@sigmainovasiglobal.com">sales@sigmainovasiglobal.com</a>
-  </p>
 
   <div style="margin-top: 20px; height: 300px;">
     <iframe
@@ -154,21 +183,6 @@
       referrerpolicy="no-referrer-when-downgrade">
     </iframe>
   </div>
-
-  <section class="contact-form">
-    <form action="mailto:sales@sigmainovasiglobal.com" method="post" enctype="text/plain">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="Name" required>
-
-      <label for="subject">Subject</label>
-      <input type="text" id="subject" name="Subject" required>
-
-      <label for="inquiry">Inquiry</label>
-      <textarea id="inquiry" name="Inquiry" rows="6" required></textarea>
-
-      <button type="submit">Send</button>
-    </form>
-  </section>
 
   <footer>
     &copy; 2025 SIG Company. All rights reserved.
