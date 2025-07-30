@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact - SIG</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIG - Contact</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
-    body { background-color: #ffffff; color: #1c1c1c; line-height: 1.6; }
-    header {
-      display: flex; justify-content: space-between; align-items: center;
-      padding: 20px 40px; background-color: transparent;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-      position: sticky; top: 0; z-index: 1000;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
     }
-    .logo img { height: 40px; }
+    body {
+      background-color: #ffffff;
+      color: #1c1c1c;
+      line-height: 1.6;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: transparent;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .logo img {
+      height: 40px;
+    }
     nav a {
       margin-left: 20px;
       text-decoration: none;
@@ -25,7 +41,7 @@
       color: #0d6efd;
     }
     .hero {
-      height: 100vh;
+      height: 60vh;
       width: 100%;
       background: url('https://i.imgur.com/45V7odr.png') center center / cover no-repeat;
       display: flex;
@@ -46,20 +62,42 @@
       margin-bottom: 20px;
       text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     }
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 700px;
-      color: #f1f1f1;
-      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    .contact-form {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
-    .section {
-      max-width: 900px;
-      margin: auto;
-      padding: 60px 20px;
+    .contact-form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    .contact-form button {
+      background-color: #0d2451;
+      color: #fff;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .contact-form button:hover {
+      background-color: #0b1e42;
     }
     footer {
-      background: #111; color: #fff;
-      padding: 30px 20px; text-align: center;
+      background: #111;
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
     }
   </style>
 </head>
@@ -77,18 +115,26 @@
   <section class="hero">
     <div class="hero-overlay">
       <h1>Contact Us</h1>
-      <p>We're ready to help bring your cosmetic formulations to life.</p>
     </div>
   </section>
 
-  <div class="section">
-    <p><strong>PT Sigma Inovasi Global</strong><br>
-    Pergudangan SIRIE blok O-25<br>
-    Jalan Lingkar Timur KM 5.5, Sidoarjo, East Java 61234</p>
-    <p>Email: SIG@gmail.com<br>
-    WhatsApp: (+62) XXX-XXXX-XXXX</p>
-  </div>
+  <section class="contact-form">
+    <form action="mailto:sales@sigmainovasiglobal.com" method="post" enctype="text/plain">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="Name" required>
 
-  <footer>&copy; 2025 SIG Company. All rights reserved.</footer>
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="Subject" required>
+
+      <label for="inquiry">Inquiry</label>
+      <textarea id="inquiry" name="Inquiry" rows="6" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 SIG Company. All rights reserved.
+  </footer>
 </body>
 </html>
