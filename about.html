@@ -33,7 +33,7 @@
       padding: 20px 40px;
       display: flex;
       justify-content: flex-end;
-      background-color: transparent;
+      background-color: rgba(13, 36, 81, 0.95);
       z-index: 1000;
     }
     nav a {
@@ -44,7 +44,7 @@
       transition: color 0.3s ease;
     }
     nav a:hover {
-      color: #2ecc71;
+      color: #5fc9a4;
     }
     .logo {
       position: fixed;
@@ -133,7 +133,7 @@
       color: #444;
       text-align: justify;
     }
-    .facilities {
+    .facilities, .marketing {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
@@ -142,11 +142,11 @@
       max-width: 1100px;
       margin: auto;
     }
-    .facilities .text {
+    .facilities .text, .marketing .text {
       flex: 1 1 400px;
       padding-right: 30px;
     }
-    .facilities .text h2 {
+    .facilities .text h2, .marketing .text h2 {
       font-size: 2rem;
       margin-bottom: 30px;
     }
@@ -156,17 +156,17 @@
       font-weight: 700;
       margin-bottom: 10px;
     }
-    .facilities .text p {
+    .facilities .text p, .marketing .text p {
       font-size: 1rem;
       margin-bottom: 20px;
       text-align: justify;
     }
-    .facilities .image {
+    .facilities .image, .marketing .image {
       flex: 1 1 400px;
       position: relative;
       max-width: 400px;
     }
-    .facilities .image img {
+    .facilities .image img, .marketing .image img {
       width: 100%;
       display: block;
       position: relative;
@@ -180,6 +180,16 @@
       width: 100%;
       height: 100%;
       background-color: #0d2451;
+      z-index: 0;
+    }
+    .marketing .image::after {
+      content: "";
+      position: absolute;
+      right: -30px;
+      bottom: -30px;
+      width: 100%;
+      height: 100%;
+      background-color: #5fc9a4;
       z-index: 0;
     }
     footer {
@@ -263,6 +273,18 @@
     </div>
     <div class="image">
       <img src="assets/images/our-facilities.png" alt="Our Facilities">
+    </div>
+  </div>
+
+  <div class="marketing">
+    <div class="text">
+      <h2>Marketing Activities</h2>
+      <p>We offer educational seminars and hands-on workshops focused on the latest ingredient trends and formulation innovations.</p>
+      <p>Our team also provides tailored support for exclusive projects through collaborative, concept-driven product development.</p>
+      <p>To strengthen engagement and visibility, we actively connect with our audience through digital marketing platforms including WhatsApp Business, our official website, and Instagram.</p>
+    </div>
+    <div class="image">
+      <img src="assets/images/our-marketing.png" alt="Marketing Activities">
     </div>
   </div>
 
