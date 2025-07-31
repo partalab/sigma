@@ -21,7 +21,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 20px 40px;
+      padding: 15px 60px;
       background-color: transparent;
       position: fixed;
       top: 0;
@@ -35,22 +35,22 @@
     nav a {
       margin-left: 20px;
       text-decoration: none;
-      color: #fff;
+      color: #0d2451;
       font-weight: 500;
       transition: color 0.3s ease;
     }
     nav a:hover {
-      color: #2ecc71;
+      color: #5fc9a4;
     }
     .hero {
       height: 100vh;
       width: 100%;
-      background: url('assets/images/service-support.png') center center / cover no-repeat;
+      background: url('assets/images/service-technical.png') center center / cover no-repeat;
       display: flex;
       align-items: flex-end;
       justify-content: flex-start;
       position: relative;
-      padding: 60px 40px;
+      padding: 60px;
     }
     .hero h1 {
       font-size: 3rem;
@@ -97,9 +97,30 @@
     footer {
       background: #0d2451;
       color: #fff;
-      padding: 10px 40px;
+      padding: 40px 60px;
+      font-size: 0.9rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    footer .left, footer .right {
+      flex: 1 1 300px;
+      margin-bottom: 20px;
+    }
+    footer .right a {
+      background-color: #5fc9a4;
+      color: white;
+      padding: 5px 10px;
+      margin-right: 10px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer .bottom {
       text-align: left;
-      font-size: 0.8rem;
+      width: 100%;
+      border-top: 1px solid #ccc;
+      padding-top: 10px;
     }
   </style>
 </head>
@@ -128,7 +149,7 @@
           <img src="assets/images/logo-brightgene.webp" alt="BrightGene">
           <img src="assets/images/logo-hondu.png" alt="Hondu Group">
           <img src="assets/images/logo-zley.png" alt="ZLEY">
-          <img src="assets/images/logo-native.avif" alt="Native Extracts">
+          <img src="assets/images/logo-native.jpg" alt="Native Extracts">
           <img src="assets/images/logo-actibiso.png" alt="Actibiso">
         </div>
       </div>
@@ -146,7 +167,7 @@
       <div class="col">
         <h3>Colorant & Beads</h3>
         <div class="logos">
-          <img src="assets/images/logo-kremer.png" alt="KREMER">
+          <img src="assets/images/logo-kremer.svg" alt="KREMER">
           <img src="assets/images/logo-gold.png" alt="Gold Gourmet">
           <img src="assets/images/logo-waaln.png" alt="WAALN">
         </div>
@@ -172,11 +193,9 @@
       <strong>Email:</strong> sales@sigmainovasiglobal.com</p><br>
       <a href="#">WhatsApp</a>
       <a href="#">Email</a>
-     
     </div>
     <div class="bottom">
-      <img src="assets/images/logo-sig.png" alt="SIG Logo" style="height: 30px;"><br>
-      2025 © - all rights reserved
+      PT. Sigma Inovasi Global 2025 © - all rights reserved
     </div>
   </footer>
 </body>
