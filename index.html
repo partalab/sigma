@@ -212,6 +212,52 @@
       color: #0d2451;
       padding: 15px 10px;
     }
+    .slider-section {
+      padding: 60px 40px;
+      background-color: #fff;
+      text-align: center;
+    }
+    .slider-section h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+    .slider {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 20px;
+      padding-bottom: 20px;
+    }
+    .slider::-webkit-scrollbar {
+      display: none;
+    }
+    .slider-item {
+      flex: 0 0 auto;
+      scroll-snap-align: center;
+      width: 300px;
+      height: 200px;
+      background-color: #eee;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .slider-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .discover-btn {
+      margin-top: 30px;
+      padding: 12px 24px;
+      background-color: #0d2451;
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .discover-btn:hover {
+      background-color: #5fc9a4;
+    }
     footer {
       background: #0d2451;
       color: #fff;
@@ -312,6 +358,17 @@
         <p>Healthcare Professional/Dermatologist</p>
       </div>
     </div>
+  </section>
+    <section class="slider-section">
+    <h2>Our Projects</h2>
+    <div class="slider">
+      <div class="slider-item"><img src="assets/images/formula1.png" alt="Formula 1"></div>
+      <div class="slider-item"><img src="assets/images/formula2.png" alt="Formula 2"></div>
+      <div class="slider-item"><img src="assets/images/formula3.png" alt="Formula 3"></div>
+      <div class="slider-item"><img src="assets/images/formula4.png" alt="Formula 4"></div>
+      <div class="slider-item"><img src="assets/images/formula5.png" alt="Formula 5"></div>
+    </div>
+    <a href="#" class="discover-btn">Discover Our Formula</a>
   </section>
 
   <footer>
