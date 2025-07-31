@@ -224,19 +224,7 @@
       padding-top: 10px;
     }
   </style>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-          }
-        });
-      }, { threshold: 0.1 });
-
-      document.querySelectorAll('.team-member').forEach(el => observer.observe(el));
-    });
-  </script>
+ 
 </head>
 <body>
   <header>
