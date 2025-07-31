@@ -232,15 +232,14 @@
       transition: transform 0.3s ease;
     }
     .slider-item {
-      flex: 0 0 auto;
-      width: auto;
-      height: auto;
+      flex: 0 0 300px;
       margin: 0 10px;
     }
     .slider-item img {
       display: block;
-      width: auto;
-      height: 200px;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
     }
     .slider-nav {
       display: flex;
@@ -298,6 +297,36 @@
       padding-top: 10px;
     }
   </style>
+  <script>
+    let currentIndex = 0;
+    let autoPlayInterval;
+
+    function slide(direction) {
+      const slider = document.querySelector('.slider');
+      const itemWidth = document.querySelector('.slider-item').offsetWidth + 20;
+      const totalItems = document.querySelectorAll('.slider-item').length;
+      const visibleItems = 3;
+      const maxIndex = totalItems - visibleItems;
+
+      currentIndex = Math.min(Math.max(currentIndex + direction, 0), maxIndex);
+      slider.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+    }
+
+    function startAutoPlay() {
+      autoPlayInterval = setInterval(() => {
+        const totalItems = document.querySelectorAll('.slider-item').length;
+        const visibleItems = 3;
+        const maxIndex = totalItems - visibleItems;
+
+        currentIndex = (currentIndex >= maxIndex) ? 0 : currentIndex + 1;
+        slide(0);
+      }, 3000);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      startAutoPlay();
+    });
+  </script>
 </head>
 <body>
   <header>
@@ -379,7 +408,12 @@
       <div class="slider-item"><img src="assets/images/formula4.png" alt="Formula 4"></div>
       <div class="slider-item"><img src="assets/images/formula5.jpg" alt="Formula 5"></div>
     </div>
-    <a href="contact.html" class="discover-btn">Discover Our Formula</a>
+    <div class="slider-nav">
+        <button class="slider-btn" onclick="slide(-1)">&larr;</button>
+        <button class="slider-btn" onclick="slide(1)">&rarr;</button>
+    </div>
+    </div>
+    <a href="#" class="discover-btn">Discover Our Formula</a>
   </section>
 
   <footer>
