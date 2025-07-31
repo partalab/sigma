@@ -10,37 +10,52 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
     }
     body {
-      font-family: 'Inter', sans-serif;
-      background-color: #fff;
+      background-color: #ffffff;
       color: #1c1c1c;
+      line-height: 1.6;
     }
     header {
-      position: relative;
-      background: url('assets/images/about-header.jpg') no-repeat center center/cover;
-      height: 100vh;
       display: flex;
-      align-items: flex-end;
-      padding: 40px 60px;
-      color: white;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 60px;
+      background-color: transparent;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
     }
-    header h1 {
-      font-size: 3rem;
-      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    .logo img {
+      height: 40px;
     }
     nav a {
       margin-left: 20px;
       text-decoration: none;
-      color: #0d2451;
+      color: #fff;
       font-weight: 500;
       transition: color 0.3s ease;
     }
     nav a:hover {
       color: #5fc9a4;
     }
-    .logo img {
-      height: 40px;
+    .hero {
+      height: 100vh;
+      width: 100%;
+      background: url('assets/images/about-header.jpg') center center / cover no-repeat;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-start;
+      position: relative;
+      padding: 60px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      color: white;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
     }
     .section {
       padding: 60px 20px;
@@ -296,27 +311,22 @@
     </div>
   </div>
 
-  <footer class="bg-[#0A215C] text-white py-10">
-    <div class="container mx-auto px-4 grid md:grid-cols-2 gap-8">
-      <div>
-        <p class="text-lg font-normal leading-relaxed">
-          We appreciate your collaboration and look forward to achieving success together.
-        </p>
-      </div>
-      <div>
-        <p class="font-bold">PT Sigma Inovasi Global</p>
-        <p>Pergudangan SIRIE blok O-25 Jalan Lingkar Timur No.KM. 5.5 Rangkah Kidul,<br>
-        Kec. Sidoarjo, Kabupaten Sidoarjo, Jawa Timur 61234</p>
-        <p class="mt-2"><span class="font-semibold">WhatsApp:</span> (+62) XXX-XXXX-XXXX</p>
-        <p><span class="font-semibold">Email:</span> sales@sigmainovasiglobal.com</p>
-        <div class="mt-4 flex space-x-4">
-          <a href="#" class="bg-[#6EDCB5] text-[#0A215C] font-semibold px-4 py-2 rounded">WhatsApp</a>
-          <a href="mailto:sales@sigmainovasiglobal.com" class="bg-[#6EDCB5] text-[#0A215C] font-semibold px-4 py-2 rounded">Email</a>
-        </div>
-      </div>
+  <footer>
+    <div class="left">
+      <p>We appreciate your collaboration and look forward to achieving success together.</p>
     </div>
-    <hr class="my-6 border-slate-400">
-    <p class="text-center text-sm">PT. Sigma Inovasi Global 2025 © – all rights reserved</p>
-  </footer>  
+    <div class="right">
+      <p><strong>PT Sigma Inovasi Global</strong><br>
+      Pergudangan SIRIE blok O-25 Jalan Lingkar Timur No.KM. 5.5 Rangkah Kidul,<br>
+      Kec. Sidoarjo, Kabupaten Sidoarjo, Jawa Timur 61234</p>
+      <p><strong>WhatsApp:</strong> (+62) 822-3046-9646<br>
+      <strong>Email:</strong> sales@sigmainovasiglobal.com</p><br>
+      <a href="https://wa.me/6282230469646">WhatsApp</a>
+      <a href="contact.html">Email</a>
+    </div>
+    <div class="bottom">
+      PT. Sigma Inovasi Global 2025 © - all rights reserved
+    </div>
+  </footer> 
 </body>
 </html>
