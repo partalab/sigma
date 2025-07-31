@@ -167,9 +167,9 @@
     }
     .customer-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-      max-width: 1000px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      max-width: 900px;
       margin: 0 auto;
     }
     .customer-item {
@@ -180,19 +180,17 @@
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .customer-item:hover {
-      transform: translateY(-5px);
+      transform: scale(1.03);
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
     }
     .customer-item img {
       width: 100%;
-      height: 180px;
+      height: 200px;
       object-fit: cover;
+      transition: transform 0.4s ease;
     }
-    .customer-item p {
-      text-align: center;
-      font-weight: 600;
-      color: #0d2451;
-      padding: 10px;
+    .customer-item:hover img {
+      transform: scale(1.05);
     }
     footer {
       background: #0d2451;
