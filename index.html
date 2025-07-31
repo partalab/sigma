@@ -221,29 +221,40 @@
       font-size: 2rem;
       margin-bottom: 30px;
     }
+    .slider-container {
+      position: relative;
+      max-width: 1000px;
+      margin: auto;
+      overflow: hidden;
+    }
     .slider {
       display: flex;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      gap: 20px;
-      padding-bottom: 20px;
-    }
-    .slider::-webkit-scrollbar {
-      display: none;
+      transition: transform 0.3s ease;
     }
     .slider-item {
       flex: 0 0 auto;
-      scroll-snap-align: center;
-      width: 300px;
-      height: 200px;
-      background-color: #eee;
-      border-radius: 10px;
-      overflow: hidden;
+      width: auto;
+      height: auto;
+      margin: 0 10px;
     }
     .slider-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+      display: block;
+      width: auto;
+      height: 200px;
+    }
+    .slider-nav {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+    .slider-btn {
+      background-color: #0d2451;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 5px;
     }
     .discover-btn {
       margin-top: 30px;
@@ -368,7 +379,7 @@
       <div class="slider-item"><img src="assets/images/formula4.png" alt="Formula 4"></div>
       <div class="slider-item"><img src="assets/images/formula5.jpg" alt="Formula 5"></div>
     </div>
-    <a href="#" class="discover-btn">Discover Our Formula</a>
+    <a href="contact.html" class="discover-btn">Discover Our Formula</a>
   </section>
 
   <footer>
@@ -382,7 +393,7 @@
       <p><strong>WhatsApp:</strong> (+62) XXX-XXXX-XXXX<br>
       <strong>Email:</strong> sales@sigmainovasiglobal.com</p><br>
       <a href="#">WhatsApp</a>
-      <a href="#">Email</a>
+      <a href="contact.html">Email</a>
     </div>
     <div class="bottom">
       PT. Sigma Inovasi Global 2025 © - all rights reserved
