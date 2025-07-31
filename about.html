@@ -127,6 +127,55 @@
       margin-top: 10px;
       font-size: 0.95rem;
       color: #444;
+      text-align: justify;
+    }
+    .facilities {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .facilities .text {
+      flex: 1 1 500px;
+      padding-right: 40px;
+    }
+    .facilities .text h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+    .facilities .text h3 {
+      color: #0d2451;
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .facilities .text p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+    .facilities .image {
+      flex: 1 1 500px;
+      position: relative;
+    }
+    .facilities .image img {
+      width: 100%;
+      display: block;
+      position: relative;
+      z-index: 1;
+    }
+    .facilities .image::after {
+      content: "";
+      position: absolute;
+      right: -40px;
+      bottom: -40px;
+      width: 100%;
+      height: 100%;
+      background-color: #0d2451;
+      z-index: 0;
     }
     footer {
       background: #0d2451;
@@ -196,6 +245,19 @@
         <h3>MARKETING TEAM</h3>
         <p>With 10+ years of industry experience, driving brand growth through strategy, trends, and innovation.</p>
       </div>
+    </div>
+  </div>
+
+  <div class="facilities">
+    <div class="text">
+      <h2>Our Facilities</h2>
+      <h3>ADVANCED LABORATORY</h3>
+      <p>To support our customers' formulation and development needs, we also operate an advanced in-house laboratory equipped for product testing, stability trials, and prototype development. This facility allows us to provide hands-on technical support, ensuring our clients can confidently bring high-performance cosmetic products to market.</p>
+      <h3>WAREHOUSE</h3>
+      <p>Our warehouse, strategically located in the SIRIE Industrial Estate in East Java, is designed for efficient storage and distribution, ensuring fast, safe, and consistent delivery of ingredients to our partners. We aim to be more than just a supplier, we're your trusted collaborator in creating outstanding cosmetic products.</p>
+    </div>
+    <div class="image">
+      <img src="assets/images/our-facilities.png" alt="Our Facilities">
     </div>
   </div>
 
